@@ -22,13 +22,13 @@ body {
 }
 
 /* 导航 */
-.navbar {
+.navbar-original {
     overflow: hidden;
     background-color: #333;
 }
 
 /* 导航栏样式 */
-.navbar a {
+.navbar-original a {
     float: left;
     display: block;
     color: white;
@@ -38,12 +38,12 @@ body {
 }
 
 /* 右侧链接*/
-.navbar a.right {
+.navbar-original a.right {
     float: right;
 }
 
 /* 鼠标移动到链接的颜色 */
-.navbar a:hover {
+.navbar-original a:hover {
     background-color: #ddd;
     color: black;
 }
@@ -81,7 +81,7 @@ body {
 .fakeimg {
     background-color: #aaa;
     width: 100%;
-    padding: 20px;
+    /* padding: 20px; */
 }
 
 /* 底部 */
@@ -100,8 +100,22 @@ body {
 
 /* 响应式布局 - 在屏幕设备宽度尺寸小于 400px 时, 让导航栏目上下堆叠显示 */
 @media screen and (max-width: 400px) {
-    .navbar a {
+    .navbar-original a {
         float: none;
         width: 100%;
     }
+}
+
+#imgOne {
+    height: 60px;
+    background-image: url(../image/dogpng.png);
+    background-repeat:no-repeat; 
+    background-size: 35% 100%;
+}
+
+#imgTwo {
+    height: 100px;
+    background-image: url(../image/jnh.gif);
+    background-repeat:no-repeat;
+    background-size: 50% 100%;
 }

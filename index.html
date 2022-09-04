@@ -5,8 +5,19 @@
     <title>Soon Blog</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+        crossorigin="anonymous"></script>
+
+
     <link rel="stylesheet" type="text/css" href="css/style.css">
-    <link rel="stylesheet" href="">
+
+
 </head>
 
 <style>
@@ -20,38 +31,73 @@
         <p>网页自适应移动端与PC端</p>
     </div>
 
-    <div class="navbar">
+    <div class="navbar-original">
         <a href="#">首页</a>
-        <a href="#">更多</a>
+        <a href="more.html">更多</a>
 
-        <a href="https://www.biaoqingbbx.com/">朋友友情链接</a>
+        <a href="https://www.w3schools.com/" class="right">w3school</a>
+        <a href="https://getbootstrap.com/docs/4.6/getting-started/introduction/" class="right">Bootstrap</a>
 
-        <a href="https://www.w3school.com.cn/html/index.asp" class="right">w3school</a>
     </div>
 
     <div class="row">
         <div class="side">
-            <h2>关于我</h2>
+            <!-- <h2>关于我</h2>
             <h5>我的照片:</h5>
-            <div class="fakeimg" style="height:200px;">待加入图像</div>
-            <p>关于我的介绍..</p>
-            <h3>更多内容</h3>
-            <p>我的更多内容</p>
-            <div class="fakeimg" style="height:60px;">待加入图像</div><br>
-            <div class="fakeimg" style="height:60px;">待加入图像</div>
+            <div class="fakeimg" style="height:200px;">待加入图像</div> -->
+            <!-- <p>关于我的介绍..</p> -->
+
+            <h2>账户</h2>
+            <div class="input-group mb-3">
+                <input type="text" class="form-control" placeholder="Username" aria-label="Username"
+                    aria-describedby="basic-addon1">
+            </div>
+
+            <div class="input-group mb-3">
+                <input type="text" class="form-control" placeholder="Passwork" aria-label="Recipient's username"
+                    aria-describedby="basic-addon2">
+            </div>
+            <button type="button" class="btn btn-dark" style="float: right">登录</button>
+            <br>
+            <br>
+
+
+            <h3>赞助商</h3>
+            <!-- <p>格安</p> -->
+            <div id="imgOne" class="fakeimg"></div><br>
+            <div id="imgTwo" class="fakeimg" style="height:60px;"></div>
+            <br>
+            <br>
+
+            <h3>友情链接</h3>
+            <p><a href="https://www.biaoqingbbx.com/">表情包百宝箱</a></p>
         </div>
         <div class="main">
-            <h2>第1回</h2>
-            <h5>update time:14:07</h5>
-            <div class="fakeimg" style="height:200px;">图像</div>
-            <p>待添加文本..</p>
-            <p>内容</p>
+            <h2>芭提雅</h2>
+            <h5>更新时间:2022年09月04号</h5>
+            <div class="fakeimg" style="height:200px;">
+                <img src="image/bty.jpg" height="100%" width="100%" alt="">
+            </div>
+            <p>介绍</p>
+            <p>享有“东方夏威夷”美誉的芭提雅，是名副其实的海滩度假天堂。那儿的阳光，似乎带着香气，晒一晒，就醉的睡着了；那儿的沙滩，细腻光滑，惹的游人不舍离去，躺在沙子里和海龟螃蟹争着安家；那儿的海鲜，琳琅满目，可以租条小船，在“四方水上市场”上尽情的选购、开吃，那儿的夜文化，有点动人，可以和各地的游客举杯，聊世界。芭提雅，正如它的名字一样，可爱中带着份优雅。
+            </p>
+            <button type="button" class="btn btn-primary">点赞</button>
+            <button type="button" class="btn btn-warning">分享</button>
+
             <br>
-            <h2>第2回</h2>
-            <h5>update time:15:07</h5>
-            <div class="fakeimg" style="height:200px;">图像</div>
-            <p>待添加文本..</p>
-            <p>内容</p>
+            <br>
+            <br>
+
+            <h2>长滩岛（Boracay）</h2>
+            <h5>更新时间:2022年09月04号</h5>
+            <div class="fakeimg" style="height:200px;"><img src="image/ctd.jpeg" height="100%" width="100%" alt="">
+            </div>
+            <p>介绍</p>
+            <p>长滩岛（Boracay），是菲律宾中部的一座岛屿，面积很小，属于西米沙鄢群岛，位于班乃岛西北2公里，是菲律宾的旅游胜地之一。 东北部还有一片小小的白沙滩伊利戈-伊利根海滩（Ilig-iligan
+                Beach），贝壳博物馆就位于这里。东部海滩上高耸的卢霍山（Mount Luho）能够看到全岛的景致，美得令人窒息。</p>
+            <button type="button" class="btn btn-primary">点赞</button>
+            <button type="button" class="btn btn-warning">分享</button>
+
         </div>
     </div>
 
